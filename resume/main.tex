@@ -1,0 +1,136 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{red}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Michelle}{Tan}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{1163 43rd st Apt C1}{11219}{United States}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(917)~586~5556}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{mtan23@binghamton.edu}                               % optional, remove / comment the line if not wanted
+\homepage{http://github.com/RadOctocode}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2016--2020}{Bachelor's Degree in Computer Science}{Watson school of engineering at Binghamton University}{Binghamton}{\textit{}}{}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+
+\section{Experience}
+\cventry{Fall 2017--Now}{ITS Security Student assistant}{Infomation Technology Services}{Binghamton}{}{Documentation and troubleshooting for ITS security.{}
+\begin{itemize}% 
+\item Creating and pitching ideas for creating a safer network system. 
+\item Interacting with students and informing them on safe practices when it comes to technology.
+\end{itemize}}
+
+\cventry{Spring 2017--Now}{Newsroom Technology assistant}{PipeDream Newspaper}{Binghamton}{}{Assistant server adminstrater and IT for PipeDream.{}
+\begin{itemize}% 
+\item Create and Maintain feature pages for the website.
+\item Troubleshoot and solve technology related problems during production.
+\end{itemize}}
+
+\cventry{Fall 2017--Now}{Rescon}{Binghamton University}{Binghamton}{}{IT and Technology help for the Hinman living community.{}
+\begin{itemize}%
+\item Help residents in Hinman residence hall with IT problems.
+\item Educate others on technology related topics they may not know about.
+  %\begin{itemize}%
+  %\item Sub-achievement (a);
+  %\item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+   % \begin{itemize}
+    %\item Sub-sub-achievement i;
+    %\item Sub-sub-achievement ii;
+    %\item Sub-sub-achievement iii;
+    %\end{itemize}
+  %\item Sub-achievement (c);
+  %\end{itemize}
+%\item Achievement 3.
+\end{itemize}}
+
+\cventry{Fall 2016--Now}{Researcher}{FRI eye gaze team}{Binghamton
+}{}{\newline{}% Detailed achievements:%
+\begin{itemize}% 
+\item researching on a team with a focus on detecting gaze patterns for location recognition.
+\item Research conducted with a team using Tobii camera and iMotions.
+\end{itemize}}
+
+\section{Projects}
+
+\cventry{Spring 2017}{Technology Consultant}{Pipeline work flow}{PipeDream}{}{\newline{}% Detailed achievements:%
+\begin{itemize}% 
+\item Assisted in the redesign planning of PipeDream newspaper's work flow website.
+\item Advised design team on how the project would be developed and the pros and cons on creating custom software. 
+\end{itemize}}
+
+\cventry{Fall 2016}{Developer}{Uhelp}{HackAE}{}{\newline{}% Detailed achievements:%
+\begin{itemize}% 
+\item Worked in a team of four to build a web app using the google maps that would create text posts and markers depending on where the user is.
+\item Used node.js and the google maps api.
+\end{itemize}}
+
+
+\section{Computer skills}
+\cvdoubleitem{Languages}{C++, Java, Python, Javascript}{Operating Systems}{Linux, Windows, Mac OS}
+
+\section{Extracurricular Activities}
+\cventry{Fall 2016-Now}{}{Binghamton ACM student chapter}{}{Club member}{{}
+\begin{itemize}% 
+\item Regularly attend workshops to improve coding skills and compete in competitions.
+\end{itemize}}
+
+\cventry{Fall 2017-Now}{}{Binghamton Capture the Flag club}{}{Club member}{{}% Detailed achievements:%
+\begin{itemize}% 
+\item Attend club meetings to learn more about computer security and x86.
+\end{itemize}}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        
+\clearpage
+
+\end{document}
+
